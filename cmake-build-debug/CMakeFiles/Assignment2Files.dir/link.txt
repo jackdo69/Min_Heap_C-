@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/Assignment2Files.dir/Assignment2Tests.cpp.o  -o Assignment2Files 

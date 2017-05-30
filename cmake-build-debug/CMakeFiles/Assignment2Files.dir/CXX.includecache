@@ -1,0 +1,54 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jack/Desktop/UTS/Data Structures and Algorithms/Assignment2Files/Assignment2Test.h
+cxxtest/TestSuite.h
+-
+iostream
+-
+vector
+-
+string
+-
+cstdlib
+-
+sstream
+-
+utility
+-
+PriorityQueue.h
+/home/jack/Desktop/UTS/Data Structures and Algorithms/Assignment2Files/PriorityQueue.h
+
+/home/jack/Desktop/UTS/Data Structures and Algorithms/Assignment2Files/Assignment2Tests.cpp
+cxxtest/TestListener.h
+-
+cxxtest/TestTracker.h
+-
+cxxtest/TestRunner.h
+-
+cxxtest/RealDescriptions.h
+-
+cxxtest/TestMain.h
+-
+cxxtest/ErrorPrinter.h
+-
+Assignment2Test.h
+/home/jack/Desktop/UTS/Data Structures and Algorithms/Assignment2Files/Assignment2Test.h
+cxxtest/Root.cpp
+-
+
+/home/jack/Desktop/UTS/Data Structures and Algorithms/Assignment2Files/PriorityQueue.h
+vector
+-
+list
+-
+utility
+-
+iostream
+-
+
