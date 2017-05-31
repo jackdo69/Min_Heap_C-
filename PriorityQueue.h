@@ -237,7 +237,7 @@ public:
   //Repairs the heap order after adding a new element
   void trickleUp (int i) {
     int parent = (i-1)/2;
-    std::cout << parent << "\n";
+//    std::cout << parent << "\n";
     if (parent >= 0) {
       if (pq[i].first < pq[parent].first) {
         swap(i, parent);
