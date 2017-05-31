@@ -41,10 +41,10 @@ int main() {
     switch(choice)
     {
     case 1:
-        cout<<"Input the element value to be added in the queue : ";
-        cin>>element;
         cout<<"Enter its priority : ";
         cin>>priority;
+        cout<<"Input the element value to be added in the queue : ";
+        cin>>element;
         pq.insert(priority, element);
         break;
     case 2:
@@ -93,15 +93,19 @@ int main() {
         // pq.insert_all(vPair);
         // cout << "Values have been added to LinkedList" << endl;
 
-    //     PriorityQueue<std::string> pq;
-    //
-    // for (int i = 0; i < rand()%10 + 1; i++){
-    //
-    //   pq.insert(rand()%100, randomString(rand()%5 + i));
-    // }
-    PriorityQueue<int> pq;
-    int priority = rand()%10;
-    pq.insert(priority, rand()%10);
+        PriorityQueue<std::string> pq;
+
+    for (int i = 0; i < rand()%10 + 1; i++){
+
+      pq.insert(rand()%100, randomString(rand()%5 + i));
+    }
+    for (int i = 0; i < pq.size(); i++) {
+      cout<< pq.remove_front()<< " ";
+
+    }
+    // PriorityQueue<int> pq;
+    // int priority = rand()%10;
+    // pq.insert(priority, rand()%10);
       }
       break;
     case 11:

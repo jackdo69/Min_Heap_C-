@@ -679,7 +679,7 @@ public:
     }
 
     std::vector<int> outputPriorities = pq.get_all_priorities();
-
+//    for (int i = 0; i < outputPriorities.size(); i++) {std::cout<< outputPriorities[i]<<"\n";}
     for (int i = 0; i < outputPriorities.size()/2; i++){
 
       if (2*i + 1 < outputPriorities.size()) TS_ASSERT(outputPriorities[i] <= outputPriorities[2*i+1]);

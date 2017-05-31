@@ -29,7 +29,7 @@ private:
    * You will probably want to add some data
    * members here.
    */
-   std::vector<std::pair<int,E>> pq;
+   std::vector<std::pair<int,E> > pq;
   //  int _size;
 public:
 
@@ -52,9 +52,10 @@ public:
       std::pair<int,E> p = std::make_pair(priority, element);
       pq.push_back(p);
 
+
       // _size++;
     }
-    if (pq.size() > 2)
+//    if (pq.size() > 2)
     trickleUp(pq.size()-1);
   }
 
@@ -236,7 +237,7 @@ public:
   //Repairs the heap order after adding a new element
   void trickleUp (int i) {
     int parent = (i-1)/2;
-
+    std::cout << parent << "\n";
     if (parent >= 0) {
       if (pq[i].first < pq[parent].first) {
         swap(i, parent);
